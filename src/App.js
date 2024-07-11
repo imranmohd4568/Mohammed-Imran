@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className='min-h-screen bg-gradient-to-b from-black  via-black to-violet-700 ' >
+    <div className='min-h-full bg-gradient-to-b from-black  via-black to-violet-700 ' >
       <NavigationBar/>
       <Home/>
       <About/>
