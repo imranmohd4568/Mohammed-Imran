@@ -1,7 +1,7 @@
 import React from 'react';
 import proj1 from '../assets/proj1.jpeg';
 import proj2 from '../assets/proj2.jpeg';
-import proj3 from '../assets/proj3.jpeg';
+import proj3 from '../assets/proj3.png';
 import proj4 from '../assets/proj4.jpeg';
 import proj5 from '../assets/proj5.jpeg';
 import proj6 from '../assets/proj6.jpeg';
@@ -77,7 +77,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
               <div className='w-full lg:w-1/4 relative group mr-10'>
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className='block overflow-hidden'>
+                {/* <a href={project.link} target="_blank" rel="noopener noreferrer" className='block overflow-hidden'> */}
                   <img
                     src={project.image}
                     width={150}
@@ -86,11 +86,15 @@ const Projects = () => {
                     className='mt-5 mb-3 rounded transition-all duration-300 ease-in-out transform group-hover:opacity-50 w-full h-full'
                   />
                   <div className='absolute inset-0 flex items-center justify-center bg-transparent bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded'>
-                    <button className='bg-gradient-to-r from-cyan-700 to-green-400 text-white px-4 py-2 rounded'>
+                   
+                   <a href={project.link} target="_blank" rel="noopener noreferrer" className='block overflow-hidden'>
+                    <button className='bg-gradient-to-r from-cyan-700 to-green-400 text-white px-4 py-2 rounded hover:scale-110 duration-300'>
                       View
                     </button>
+                    </a>
+
                   </div>
-                </a>
+                {/* </a> */}
               </div>
               <div className='w-full max-w-xl mt-5 lg:w-3/4'>
                 <h6 className='mb-2 font-semibold'>
